@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+body{
+    background-color: rgb(76, 61, 61);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    text-align:center;
+    color: rgb(255, 247, 212);
+}
+
+main{
+    display:flex;
+    justify-content: center;
+    position: relative; 
+    top: 100px;
+    /* flex-direction: column; */
+}
+
+.game_board{
+    width:350px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.butt{
+    height:100px;
+    width:100px;
+    background-color: rgb(255, 217, 90);
+    border-radius: 20px;
+    border: 2px solid rgb(255, 247, 212);
+    box-shadow: 4px 4px 5px rgb(255, 247, 212, 0.3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    cursor:pointer;
+    transition: transform 0.6s ease;
+}
+
+.reset_game{
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: antiquewhite;
+    color:black;
+    font-size: large;
+    height:40px;
+    width: 120px;
+    position: relative;
+    top:180px;
+    box-shadow: 2px 2px 5px rgb(255, 247, 212, 0.3);
+    cursor:pointer;
+    transition: transform 0.4s ease;
+    box-shadow: 4px 4px 5px rgb(255, 247, 212, 0.3);
+}
+
+.disable{
+    pointer-events: none;
+    cursor:not-allowed;
+    color:dimgrey;
+}
+
+#popup_box{
+    display:flex;
+    height: 150px;
+    width: 300px;
+    background-color:bisque;
+    z-index:999;
+    position:fixed;
+    top:30%;
+    justify-content: center;
+    align-items: center;
+    border-radius:30px;
+    border: 2px solid black;
+    font-size: 23px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#new_game{
+    background-color:darkorange;
+    height:30px;
+    width: 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid black;
+    position: relative;
+    /* top: 60px; */
+    /* right: 40px; */
+    /* bottom:25px; */
+    font-size: 15px;
+    /* box-shadow: 2px 2px 5px rgb(255, 247, 212, 0.3); */
+    cursor:pointer;
+    transition: transform 0.4s ease;
+}
+
+.hide{
+    /* display:none; */
+    visibility: hidden;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+}
+
+.show{
+    /* display:flex; */
+    visibility:visible;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+}

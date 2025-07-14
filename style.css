@@ -90,6 +90,7 @@ main{
     font-size: 23px;
     text-align: center;
     flex-wrap: wrap;
+    padding: 7px;
 }
 
 #new_game{

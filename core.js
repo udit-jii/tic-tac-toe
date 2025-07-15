@@ -171,6 +171,7 @@ reset.addEventListener("click", () => {
             reset.style.transform = "scale(1)";
         }, 150
     )
+    count=0;
 })
 
 
